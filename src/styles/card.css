@@ -1,0 +1,124 @@
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.card {
+    position: relative;
+}
+
+.card .card-container {
+    border-radius: 1rem;
+    background-color: var(--e);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 90%;
+    background: var(--e);
+    border-radius: 1rem;
+    position: relative;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.card::before {
+    position: absolute;
+    top: 4rem;
+    right: 0.5rem;
+    content: '';
+    background: var(--a);
+    height: 28px;
+    width: 28px;
+    transform: rotate(45deg);
+}
+
+.card::after {
+    position: absolute;
+    content: attr(data-label);
+    top: 43px;
+    right: 2px;
+    padding: 0.5rem;
+    width: 10rem;
+    background: var(--b);
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
+}
+
+
+.card .card-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-text {
+    text-align: justify;
+    padding: 2px 16px;
+}
+
+.card-img img {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .container-card {
+        flex-direction: row;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .card {
+        width: 30%;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .card-img img {
+        width: 350px;
+        height: 255px;
+        padding: 10px;
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+    .card .card-container {
+        border-radius: 1rem;
+        background-color: var(--e);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 100%;
+        background: var(--e);
+        border-radius: 1rem;
+        position: relative;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    
+    .card::before {
+        position: absolute;
+        top: 4rem;
+        right: 0.5rem;
+        content: '';
+        background: var(--a);
+        height: 28px;
+        width: 28px;
+        transform: rotate(45deg);
+    }
+    
+    .card::after {
+        position: absolute;
+        content: attr(data-label);
+        top: 43px;
+        right: 2px;
+        padding: 0.5rem;
+        width: 10rem;
+        background: var(--b);
+        color: white;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
+    }
+    
+
+
+}
