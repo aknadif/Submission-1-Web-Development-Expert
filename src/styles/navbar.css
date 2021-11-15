@@ -15,6 +15,11 @@ nav {
     font-size: 28px;
     font-weight: bold;
     color: var(--d);
+    transition: 1s;
+}
+nav .logo-text.muncul{
+    color: var(--a);
+    transition: 1s;
 }
 
 .nav-list {
@@ -56,10 +61,16 @@ nav {
     line-height: 60px;
     cursor: pointer;
     margin-left: 150px;
+    transition: 1s;
 }
 
 .hamburger-btn:hover {
     font-size: 46px;
+}
+.hamburger-btn.muncul{
+    color: var(--a);
+    transition: 1s;
+    
 }
 
 #check {
@@ -106,7 +117,7 @@ nav {
         margin-right: 25px;
         transition: none;
     }
-
+    
     .nav-list li {
         display: inline-block;
         opacity: 1;
@@ -115,13 +126,19 @@ nav {
         transition: none;
         font-size: 34px;
     }
-
+    
     .nav-list li a {
         font-size: 34px;
+        transition: 1s;
     }
-
+    
     .nav-list li a.active,
     .nav-list li a:hover {
         color: var(--d);
+        
+    }
+    .nav-list.muncul a{
+        color: var(--a);
+        transition: 1s;
     }
 }

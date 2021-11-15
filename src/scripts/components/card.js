@@ -13,14 +13,14 @@ class Card extends HTMLElement {
         <div class="card" data-label="${item.city}">
           <div class="card-container">
             <div class="card-img">
-                <img src="${item.pictureId}" alt="content-img-1">
+                <img src="${item.pictureId}" alt="">
             </div>
             <div class="card-text">
                 <div class="card-star">
-                ${item.rating}
+                Rating : ${item.rating}
                 </div>
                 <div class="card-title">
-                ${item.name}
+                Name : ${item.name}
                 </div>
                 <div class="card-desc">
                 ${item.description}

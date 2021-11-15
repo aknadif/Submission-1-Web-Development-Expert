@@ -21,9 +21,9 @@ section .option{
     color: var(--a);
     border: none;
     margin-top: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-   margin-left: 15px;
+    /* display: grid; */
+    /* grid-template-columns: auto auto auto; */
+   margin-left: 155px;
 }
 .container-btn .btn{
     cursor: pointer;
@@ -57,6 +57,6 @@ section .option{
     }
     .container-btn .btn:hover{
         width: 100%;
-        height: 100%;
+        height: 30px;
     }
 }

@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-left: 30px;
 }
 .card {
     position: relative;
@@ -11,7 +12,7 @@
     border-radius: 1rem;
     background-color: var(--e);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 90%;
+    width: 85%;
     background: var(--e);
     border-radius: 1rem;
     position: relative;
@@ -22,7 +23,7 @@
 .card::before {
     position: absolute;
     top: 4rem;
-    right: 0.5rem;
+    right: 2rem;
     content: '';
     background: var(--a);
     height: 28px;
@@ -34,7 +35,7 @@
     position: absolute;
     content: attr(data-label);
     top: 43px;
-    right: 2px;
+    right: 26px;
     padding: 0.5rem;
     width: 10rem;
     background: var(--b);
@@ -80,7 +81,7 @@
         height: 255px;
         padding: 10px;
         margin-top: 15px;
-        margin-left: 25px;
+        margin-left: 45px;
     }
     .card .card-container {
         border-radius: 1rem;

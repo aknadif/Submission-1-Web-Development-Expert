@@ -5,3 +5,6 @@ import "../styles/hero.css";
 import "../styles/content.css";
 import "../styles/footer.css";
 import "../scripts/components/card";
+import { changeColor } from "./navbar";
+
+changeColor();
