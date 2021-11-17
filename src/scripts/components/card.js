@@ -13,7 +13,7 @@ class Card extends HTMLElement {
         <div class="card">
           <div class="card-container">
             <div class="card-img">
-                <img src="${item.pictureId}" alt="">
+                <img src="${item.pictureId}" alt="${item.name}">
             </div>
             <div class="card-text">
                 <div class="card-star">
