@@ -3,11 +3,10 @@ section .option{
     width: 100%;
 }
 
-/* Heading */
 .option {
     margin-top: -10px;
     width: 100%;
-    height: 25vh;
+    height: 30vh;
 }
 
 .option h2 {
@@ -20,10 +19,7 @@ section .option{
 .container-btn {
     color: var(--a);
     border: none;
-    margin-top: 20px;
-    /* display: grid; */
-    /* grid-template-columns: auto auto auto; */
-   margin-left: 155px;
+    text-align: center;
 }
 .container-btn .btn{
     cursor: pointer;
@@ -39,21 +35,22 @@ section .option{
     color: var(--e);
 }
 
-/* Heading */
-
-/* Card */
-/* Card */
 
 @media screen and (min-width: 600px) {
-    .container-btn .btn{
+    .container-btn.btn{
         width: 100%;
         height: 30px;
     }
-    .container-btn {
-        margin-top: 20px;
-        padding-left: 350px;
-        padding-right: 400px;
-        grid-column-gap: 10px;
+    .container-btn.btn:hover{
+        width: 100%;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container-btn .btn{
+        width: 30%;
+        height: 30px;
     }
     .container-btn .btn:hover{
         width: 100%;

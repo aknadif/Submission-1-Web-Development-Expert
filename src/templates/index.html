@@ -8,29 +8,31 @@
 </head>
 
 <body>
+    <a href="#maincontent" class="skip-link">Menuju Konten</a>
     <!-- Start Navbar -->
     <nav >
-        <div class="logo-container">
-            <label class="logo-text">BurgerPub</label>
-        </div>
-        <input type="checkbox" id="check">
-        <label for="check" class="hamburger-btn">
-            <i class="fa fa-bars"></i>
-        </label>
-        <ul class="nav-list">
-            <li>
-                <a class="active" href="/">Home</a>
-            </li>
-            <li>
-                <a href="#">Favorite</a>
-            </li>
-            <li>
-                <a href="http://aknadhif.me/">About Us</a>
-            </li>
-        </ul>
+            <div class="logo-container">
+                <a href="/" class="active logo-text">BurgerPub</a>
+            </div>
+            <div id="myLinks" class="nav-list">
+                <ul>
+                    <li class="link">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="link">
+                        <a href="#">Favorite</a>
+                    </li>
+                    <li class="link">
+                        <a href="http://aknadhif.me/">About us</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="javascript:void(0);" class="hamburger-btn" id="navbar" tabindex="0">
+              <i class="fa fa-bars"></i>
+            </a>
     </nav>
     <!-- End Navbar -->
-    <main>
+    <main id="maincontent">
 
         <!-- Start Hero -->
         <section class="hero">
@@ -40,19 +42,18 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam recusandae ex officiis rem odio,
                 voluptatibus, fugiat assumenda blanditiis dignissimos tempora id expedita asperiores voluptate
                 dolorem.</p>
-                <a href="#maincontent">Menuju Konten</a>
             </div>
         </section>
         <!-- End Hero -->
         <!-- Start Content -->
         
-        <section class="content" id="maincontent">
+        <section class="content">
             <div class="option">
                 <h2>Explore Restaurant</h2>
                 <div class="container-btn">
                     <button class="btn">Restaurant</button>
                     <!-- <button class="btn">Food</button>
-                        <button class="btn">Drink</button> -->
+                    <button class="btn">Drink</button> -->
                     </div>
                 </div>
                 

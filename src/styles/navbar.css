@@ -1,11 +1,25 @@
 nav {
-    width: 50%;
+    width: 95%;
     height: 75px;
     top: 0;
     position: fixed;
     display: flex;
     justify-content: space-between;
     z-index: 1;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #bf1722;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
 }
 
 .logo-text {
@@ -17,32 +31,36 @@ nav {
     color: var(--d);
     transition: 1s;
 }
-nav .logo-text.muncul{
+
+nav .logo-text.muncul {
     color: var(--a);
     transition: 1s;
 }
 
-.nav-list {
+.nav-list.click {
     position: fixed;
     width: 100%;
-    height: 0vh;
+    height: 100%;
     top: 75px;
     background: var(--b);
     text-align: center;
-    transition: all .5s;
+}
+
+.nav-list li.click {
+    display: block;
+    opacity: 1;
+    line-height: 70px;
+    margin: 50px -100px;
 }
 
 .nav-list li {
     display: none;
     opacity: 0;
-    line-height: 70px;
-    margin: 50px 0;
-    transition: all .5s;
 }
 
 .nav-list li a {
     color: var(--e);
-    font-size: 56px;
+    font-size: 44px;
     text-transform: uppercase;
     font-weight: bold;
 
@@ -60,33 +78,19 @@ nav .logo-text.muncul{
     color: var(--d);
     line-height: 60px;
     cursor: pointer;
-    margin-left: 150px;
     transition: 1s;
 }
 
 .hamburger-btn:hover {
     font-size: 46px;
 }
-.hamburger-btn.muncul{
+
+.hamburger-btn.muncul {
     color: var(--a);
     transition: 1s;
-    
 }
 
-#check {
-    display: none;
-}
-
-#check:checked~.nav-list {
-    height: 100%;
-}
-
-#check:checked~.nav-list li {
-    display: block;
-    opacity: 1;
-}
-
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 850px) {
     .logo-contianer {
         margin-left: 25px;
     }
@@ -117,7 +121,7 @@ nav .logo-text.muncul{
         margin-right: 25px;
         transition: none;
     }
-    
+
     .nav-list li {
         display: inline-block;
         opacity: 1;
@@ -126,18 +130,19 @@ nav .logo-text.muncul{
         transition: none;
         font-size: 34px;
     }
-    
+
     .nav-list li a {
         font-size: 34px;
         transition: 1s;
     }
-    
+
     .nav-list li a.active,
     .nav-list li a:hover {
         color: var(--d);
-        
+
     }
-    .nav-list.muncul a{
+
+    .nav-list.muncul a {
         color: var(--a);
         transition: 1s;
     }

@@ -10,7 +10,7 @@ class Card extends HTMLElement {
     let card = "";
     for (let item of data.restaurants) {
       card += `
-        <div class="card" data-label="${item.city}">
+        <div class="card">
           <div class="card-container">
             <div class="card-img">
                 <img src="${item.pictureId}" alt="">

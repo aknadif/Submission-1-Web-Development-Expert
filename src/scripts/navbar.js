@@ -1,10 +1,16 @@
 export function navbar() {
-  const btn = document.getElementById("Collapse");
+  const btn = document.getElementById("navbar");
+  const link = document.getElementById("myLinks");
+  const el = document.querySelectorAll(".link");
   btn.addEventListener("click", () => {
-    if (btn.className === "collapse") {
-      btn.className += " responsive";
+    if (link.style.display === "block") {
+      link.style.display = "none";
     } else {
-      btn.className = "collapse";
+      for (let index = 0; index < el.length; index++) {
+        el[index].classList.add("click");
+      }
+      link.classList.add("click");
+      link.style.display = "block";
     }
   });
 }
