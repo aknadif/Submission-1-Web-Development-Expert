@@ -53,7 +53,7 @@ section .option{
         height: 30px;
     }
     .container-btn .btn:hover{
-        width: 100%;
+        width: 30%;
         height: 30px;
     }
 }
